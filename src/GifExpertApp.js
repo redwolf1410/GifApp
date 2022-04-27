@@ -1,18 +1,14 @@
 import React, { useState } from "react";
-import AddCategory from "./components/AddCategory";
+import {AddCategory} from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
-export const GifExpertApp = () => {
+export const GifExpertApp = ({defaultCategories = ['Rick and Morty']} ) => {
 
-    const [categories,setCatergories] = useState(['Rick and Morty'])
+    const [categories,setCategories] = useState(defaultCategories)
 
-    // const handleAdd = () =>{
-    //     setCatergories([...categories, value])
-
-    // }
     return (
         <>
             <h2>GifExpertApp</h2>
-            <AddCategory setCatergories={setCatergories}/>  
+            <AddCategory setCategories={setCategories}/>  
             <hr />
             <ol>
                 {

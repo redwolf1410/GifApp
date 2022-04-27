@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGrid tests should be the same as the snapshot 1`] = `
+<Fragment>
+  <h3>
+    One Punch
+  </h3>
+  Loading...
+</Fragment>
+`;
